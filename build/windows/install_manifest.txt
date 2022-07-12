@@ -1,6 +1,7 @@
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/icudtl.dat
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/flutter_windows.dll
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/assets/images/back.jpg
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin

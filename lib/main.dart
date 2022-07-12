@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }
@@ -30,75 +31,83 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueAccent,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Text(
-            'Controle de Lotação',
-            style: TextStyle(
-              fontSize: 30,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/back.jpg'),
+            fit: BoxFit.cover,
           ),
-          const Padding(
-            padding: EdgeInsets.all(40),
-            child: Text(
-              '0',
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'Controle de Lotação',
               style: TextStyle(
-                fontSize: 80,
+                fontSize: 30,
                 color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
             ),
-          ),
-          // SizedBox(height: 32),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextButton(
-                onPressed: decrement,
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  fixedSize: const Size(100, 100),
-                  // padding: const EdgeInsets.all(32),
-                  primary: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    // side: BorderSide(color: Colors.green, width: 3,),
-                    borderRadius: BorderRadius.circular(24),
-                  ),
-                ),
-                child: const Text(
-                  'Saiu',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 22,
-                  ),
+            const Padding(
+              padding: EdgeInsets.all(40),
+              child: Text(
+                '0',
+                style: TextStyle(
+                  fontSize: 80,
+                  color: Colors.white,
                 ),
               ),
-              const SizedBox(width: 30),
-              TextButton(
-                onPressed: increment,
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  fixedSize: const Size(100, 100),
-                  // padding: const EdgeInsets.all(32),
-                  primary: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    // side: BorderSide(color: Colors.green, width: 3,),
-                    borderRadius: BorderRadius.circular(24),
+            ),
+            // SizedBox(height: 32),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextButton(
+                  onPressed: decrement,
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    fixedSize: const Size(100, 100),
+                    // padding: const EdgeInsets.all(32),
+                    primary: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      // side: BorderSide(color: Colors.green, width: 3,),
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                  ),
+                  child: const Text(
+                    'Saiu',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 22,
+                    ),
                   ),
                 ),
-                child: const Text(
-                  'Entrou',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 22,
+                const SizedBox(width: 30),
+                TextButton(
+                  onPressed: increment,
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    fixedSize: const Size(100, 100),
+                    // padding: const EdgeInsets.all(32),
+                    primary: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      // side: BorderSide(color: Colors.green, width: 3,),
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                  ),
+                  child: const Text(
+                    'Entrou',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 22,
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
