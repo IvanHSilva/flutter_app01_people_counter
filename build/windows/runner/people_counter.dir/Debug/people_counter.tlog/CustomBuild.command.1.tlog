@@ -1,0 +1,10 @@
+^E:\DEV-PROJECTS\FLUTTER\APP1-PEOPLE-COUNTER\PEOPLE_COUNTER\WINDOWS\RUNNER\CMAKELISTS.TXT
+setlocal
+"C:\Visual Studio 2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/DEV-Projects/Flutter/app1-people-counter/people_counter/windows -BE:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows --check-stamp-file E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
