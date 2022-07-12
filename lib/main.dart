@@ -18,27 +18,85 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  void decrement() {
+    print('Saiu...');
+  }
+
+  void increment() {
+    print('Entrou...');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.blueAccent,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Text(
-            'Pode entrar',
+        children: [
+          const Text(
+            'Controle de Lotação',
             style: TextStyle(
               fontSize: 30,
               color: Colors.white,
               fontWeight: FontWeight.bold,
             ),
           ),
-          Text(
-            '0',
-            style: TextStyle(
-              fontSize: 100,
-              color: Colors.white,
+          const Padding(
+            padding: EdgeInsets.all(40),
+            child: Text(
+              '0',
+              style: TextStyle(
+                fontSize: 80,
+                color: Colors.white,
+              ),
             ),
+          ),
+          // SizedBox(height: 32),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                onPressed: decrement,
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  fixedSize: const Size(100, 100),
+                  // padding: const EdgeInsets.all(32),
+                  primary: Colors.black,
+                  shape: RoundedRectangleBorder(
+                    // side: BorderSide(color: Colors.green, width: 3,),
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                ),
+                child: const Text(
+                  'Saiu',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 30),
+              TextButton(
+                onPressed: increment,
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  fixedSize: const Size(100, 100),
+                  // padding: const EdgeInsets.all(32),
+                  primary: Colors.black,
+                  shape: RoundedRectangleBorder(
+                    // side: BorderSide(color: Colors.green, width: 3,),
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                ),
+                child: const Text(
+                  'Entrou',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

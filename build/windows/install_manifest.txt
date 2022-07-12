@@ -4,5 +4,6 @@ E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/NOTICES
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
 E:/DEV-Projects/Flutter/app1-people-counter/people_counter/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
